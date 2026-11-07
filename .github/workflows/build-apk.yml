@@ -25,9 +25,17 @@ jobs:
           gradle-version: 8.7
 
       - name: Build debug APK
-        run: gradle assembleDebug --stacktrace
+        run: |
+          echo "Repo files:"; find . -maxdepth 3 -not -path './.git/*' | head -50
+          SETTINGS=$(find . -name settings.gradle.kts -not -path './.git/*' | head -1)
+          if [ -z "$SETTINGS" ]; then
+            echo "ERROR: settings.gradle.kts repo ma nathi. Project files upload karo."
+            exit 1
+          fi
+          cd "$(dirname "$SETTINGS")"
+          gradle assembleDebug --stacktrace
 
       - uses: actions/upload-artifact@v4
         with:
           name: BarcodeInventoryBilling-debug-apk
-          path: app/build/outputs/apk/debug/*.apk
+          path: "**/build/outputs/apk/debug/*.apk"
