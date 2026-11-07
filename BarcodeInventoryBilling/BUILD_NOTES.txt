@@ -1,0 +1,11 @@
+Project repair notes
+====================
+Missing app entry points, CustomerDao, StockMovementDao, strings, backup resources, launcher vector, and ProGuard rules were added. Gradle plugin versions were made explicit and the unused Navigation Safe Args plugin was removed.
+
+To build an APK, open this folder in Android Studio with Android SDK Platform 34 and JDK 17 installed, allow Gradle sync, then choose Build > Build Bundle(s) / APK(s) > Build APK(s).
+
+This environment did not contain Android SDK or Gradle, so an APK could not be compiled or verified here.
+
+Cloud build (no Android Studio needed)
+--------------------------------------
+Push this folder to a GitHub repo -> Actions tab -> "Build APK" -> download the artifact "BarcodeInventoryBilling-debug-apk" (contains app-debug.apk).

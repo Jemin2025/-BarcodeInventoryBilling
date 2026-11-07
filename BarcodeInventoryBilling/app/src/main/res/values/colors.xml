@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Primary Colors (Navy Blue, White & Subtle Teal) -->
+    <color name="primary_navy">#0F172A</color>
+    <color name="primary_navy_dark">#020617</color>
+    <color name="primary_navy_medium">#1E293B</color>
+    <color name="primary_navy_light">#334155</color>
+    <color name="navy_surface_tint">#131E35</color>
+    
+    <!-- Accent Vibrant Teal / Mint -->
+    <color name="accent_teal">#0D9488</color>
+    <color name="accent_teal_light">#14B8A6</color>
+    <color name="accent_teal_dark">#0F766E</color>
+    <color name="teal_surface_subtle">#F0FDFA</color>
+    <color name="teal_surface_border">#CCFBF1</color>
+    <color name="teal_glow">#2DD4BF</color>
+
+    <!-- Crisp White & Surfaces -->
+    <color name="pure_white">#FFFFFF</color>
+    <color name="ios_system_background">#F2F2F7</color>
+    <color name="ios_secondary_background">#FFFFFF</color>
+    <color name="ios_tertiary_background">#EBEBF0</color>
+    <color name="ios_separator">#E2E8F0</color>
+    <color name="ios_segmented_pill_bg">#E2E8F0</color>
+    
+    <!-- Typography -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="text_tertiary">#94A3B8</color>
+
+    <!-- Semantic Status Badges -->
+    <color name="status_green">#10B981</color>
+    <color name="status_green_bg">#ECFDF5</color>
+    <color name="status_amber">#F59E0B</color>
+    <color name="status_amber_bg">#FFFBEB</color>
+    <color name="status_red">#EF4444</color>
+    <color name="status_red_bg">#FEF2F2</color>
+</resources>

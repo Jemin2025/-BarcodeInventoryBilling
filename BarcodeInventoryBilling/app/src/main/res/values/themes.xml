@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BarcodeInventory" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_navy</item>
+        <item name="colorOnPrimary">@color/pure_white</item>
+        <item name="colorSecondary">@color/accent_teal</item>
+        <item name="colorOnSecondary">@color/pure_white</item>
+        <item name="colorSecondaryContainer">@color/teal_surface_subtle</item>
+        <item name="colorOnSecondaryContainer">@color/accent_teal_dark</item>
+
+        <!-- Clean Translucent iOS Look -->
+        <item name="android:statusBarColor">@color/pure_white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/ios_system_background</item>
+
+        <item name="cardViewStyle">@style/Widget.App.IOSCard</item>
+        <item name="materialCardViewStyle">@style/Widget.App.IOSCard</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button.PrimaryPill</item>
+    </style>
+
+    <!-- iOS / Cupertino Inset Grouped Card (Squircle 18dp) -->
+    <style name="Widget.App.IOSCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">18dp</item>
+        <item name="cardElevation">1dp</item>
+        <item name="cardBackgroundColor">@color/pure_white</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/ios_separator</item>
+    </style>
+
+    <!-- iOS Rounded Pill Button (24dp radius) -->
+    <style name="Widget.App.Button.PrimaryPill" parent="Widget.Material3.Button">
+        <item name="cornerRadius">24dp</item>
+        <item name="backgroundTint">@color/primary_navy</item>
+        <item name="android:textColor">@color/pure_white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="elevation">2dp</item>
+    </style>
+
+    <!-- iOS Teal Accent Pill Button -->
+    <style name="Widget.App.Button.TealPill" parent="Widget.Material3.Button">
+        <item name="cornerRadius">24dp</item>
+        <item name="backgroundTint">@color/accent_teal</item>
+        <item name="android:textColor">@color/pure_white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+</resources>
